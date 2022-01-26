@@ -1,0 +1,22 @@
+Question 5:
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        var marks = parseInt(prompt("Enter marks", "Marks"))
+        if (marks > 75) {
+            document.write("Grade is A");
+        } else if (marks <= 75 && marks >= 60) {
+            document.write("Grade is B");
+        } else if (marks <= 60 && marks >= 45) {
+            document.write("Grade is C");
+        } else {
+            document.write("Grade is D");
+        }
+    </script>
+</body>
+
+</html>

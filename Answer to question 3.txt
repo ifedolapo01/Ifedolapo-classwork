@@ -1,0 +1,26 @@
+Question 3:
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var welcome;
+        var date = new Date();
+        var hour = date.getHours();
+        if (hour < 12) {
+            welcome = "Good Morning";
+        } else if (hour < 17) {
+            welcome = "Good Afternoon";
+        } else {
+            welcome = "Good Evening";
+        }
+        var name = window.prompt("Enter your name:");
+        alert(welcome + " " + name);
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 Question 3:
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
@@ -8,18 +8,18 @@ Question 3:
 
 <body>
     <script>
-        var welcome;
+        var time;
         var date = new Date();
         var hour = date.getHours();
         if (hour < 12) {
-            welcome = "Good Morning";
-        } else if (hour < 17) {
-            welcome = "Good Afternoon";
+            time = "Good Morning";
+        } else if (hour >= 12 && hour < 17) {
+            time = "Good Afternoon";
         } else {
-            welcome = "Good Evening";
+            time = "Good Evening";
         }
-        var name = window.prompt("Enter your name:");
-        alert(welcome + " " + name);
+        var name = prompt("Enter your name:");
+        alert(time + " " + name);
     </script>
 </body>
 

@@ -1,25 +1,30 @@
-Question 3:
-!DOCTYPE html>
+Question 5:
+<!DOCTYPE html>
 <html>
 
-<head>
-
-</head>
+<head></head>
 
 <body>
     <script>
-        var time;
-        var date = new Date();
-        var hour = date.getHours();
-        if (hour < 12) {
-            time = "Good Morning";
-        } else if (hour >= 12 && hour < 17) {
-            time = "Good Afternoon";
-        } else {
-            time = "Good Evening";
+        var marks = parseInt(prompt("Enter marks", "Marks"))
+
+        if (marks > 75) 
+        {
+            document.write("Grade is A");
+        } 
+        else if 
+        (marks <= 75 && marks >= 60) 
+        {
+            document.write("Grade is B");
+        } 
+        else if 
+        (marks <= 60 && marks >= 45) 
+        {
+            document.write("Grade is C");
+        } 
+        else {
+            document.write("Grade is D");
         }
-        var name = prompt("Enter your name:");
-        alert(time + " " + name);
     </script>
 </body>
 
